@@ -1,0 +1,102 @@
+/* 全体のレイアウト調整 */
+.confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #fff;
+    padding-top: 80px;
+    color: #8B7969;
+    box-sizing: border-box;
+}
+
+/* タイトル */
+.confirm__title {
+    font-size: 28px;
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* フォーム本体 */
+.confirm__form {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* テーブル */
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    table-layout: fixed;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* 左列（項目名） */
+.confirm-table th {
+    width: 30%;
+    background-color: #BAA899;
+    color: #fff;
+    font-weight: 400;
+    text-align: left;
+    padding: 18px 20px;
+    font-size: 16px;
+    vertical-align: middle;
+    border: 1px solid #E0DFDE;
+    box-sizing: border-box;
+}
+
+/* 右列（値） */
+.confirm-table td {
+    width: 70%;
+    background-color: #fff;
+    color: #8B7969;
+    padding: 18px 20px;
+    border: 1px solid #E0DFDE;
+    font-size: 16px;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+/* ボタンエリア */
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* ボタン共通 */
+.confirm__button {
+    width: 140px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* 送信ボタン */
+.confirm__button--send {
+    background-color: #8B7969;
+    color: #fff;
+}
+
+/* 修正ボタン */
+.confirm__button--back {
+    background-color: #fff;
+    color: #8B7969;
+    border: 1px solid #8B7969;
+}
+
+/* ホバー時 */
+.confirm__button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,256 @@
+/* =============================
+   共通レイアウト
+============================= */
+body {
+    font-family: 'Inika',serif;
+    color: #5a4635;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form {
+    max-width: 1000px;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 40px 60px;
+    border: 1px solid #e6dfd8;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+/* タイトル */
+.form__title {
+    font-family: Inika;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: #8b7969;
+    margin-bottom: 30px;
+}
+
+/* =============================
+   フォーム全体
+============================= */
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.form__label {
+    width: 180px;
+    text-align: left;
+    padding-right: 10px;
+    font-family: Inika, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #5a4635;
+}
+
+.form__label--required {
+    color: #ff6b6b;
+    font-size: 13px;
+    margin-left: 4px;
+}
+
+/* 入力欄 */
+.form__group input[type="text"],
+.form__group input[type="email"],
+.form__group select,
+.form__group textarea {
+    flex: 1;
+    min-width: 200px;
+    border: none;
+    background-color: #f4f4f4;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #5a4635;
+    outline: none;
+}
+
+.form__group input::placeholder,
+.form__group textarea::placeholder {
+    color: #b0a59b;
+}
+
+/* =============================
+   名前入力（姓・名）
+============================= */
+.form__name-fields {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.form__name-fields input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 15px;
+    color: #5a4635;
+    outline: none;
+}
+
+
+/* =============================
+   性別ラジオボタン
+============================= */
+.form__radio {
+    display: flex;
+    flex: 1;
+    gap: 50px;
+    align-items: center;
+}
+
+.form__radio input[type="radio"] {
+    accent-color: #8b7969;
+    transform: scale(1.2);
+    margin-right: 4px;
+}
+
+/* =============================
+   電話番号（3分割）
+============================= */
+.form__tel-fields {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 8px;
+}
+
+.form__tel-fields input {
+    width: 60px;
+    text-align: center;
+    border: none;
+    background-color: #f4f4f4;
+    padding: 8px 0;
+    font-size: 15px;
+    border-radius: 3px;
+    color: #5a4635;
+    box-sizing: border-box;
+}
+
+.form__tel-hyphen {
+    color: #8b7969;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* お問い合わせの種類*/
+.category-select {
+    padding: 10px 12px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* =============================
+   セレクトボックス
+============================= */
+.form__group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%238b7969' height='20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5 7l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+/* =============================
+   テキストエリア
+============================= */
+.form__group textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* 入力欄＋エラーを縦並び */
+.form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* 横並びの入力欄 */
+.form__name-fields,
+.form__tel-fields,
+.form__radio {
+    display: flex;
+    gap: 10px;
+}
+
+/* 電話番号の幅調整 */
+.form__tel-fields input {
+    width: 60px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 3px;
+    border: none;
+    background-color: #f4f4f4;
+}
+
+/* ラジオボタン */
+.form__radio label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.form__input-wrapper form__radio
+
+/* 入力欄全般 */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border-radius: 4px;
+    border: none;
+    background-color: #f4f4f4;
+    padding: 10px 14px;
+    font-size: 15px;
+    color: #5a4635;
+}
+
+/* エラー */
+.error {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* ボタン */
+.form__button {
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form__button button {
+    background-color: #8b7969;
+    color: #fff;
+    border: none;
+    padding: 12px 60px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form__button button:hover {
+    background-color: #a28d7b;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .form__group {
+        flex-direction: column;
+    }
+
+    .form__label {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+}

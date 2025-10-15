@@ -1,0 +1,104 @@
+body {
+    font-family: 'Inika',serif;
+    color: #5a4635;
+    background: #eee7e1;
+}
+
+/* --- 全体 --- */
+.login-form__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    padding-top: 40px;
+}
+
+/* --- タイトル --- */
+.login-form__heading h2 {
+    font-size: 28px;
+    color: #8B7969;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* --- フォーム全体 --- */
+.form {
+    background-color: #fff;
+    border: 1px solid #E0DFDE;
+    border-radius: 10px;
+    width: 600px;
+    padding: 60px 100px;
+    box-sizing: border-box;
+}
+
+/* --- 各入力グループ --- */
+.form__group {
+    margin-bottom: 40px;
+}
+
+.form__group-title {
+    margin-bottom: 10px;
+}
+
+.form__label--item {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* --- 入力欄 --- */
+.form__input--text input {
+    width: 100%;
+    height: 48px;
+    padding: 10px 14px;
+    border: none;
+    background-color: #F4F4F4;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #8B7969;
+}
+
+.form__input--text input::placeholder {
+    color: #C0B8B1;
+}
+
+/* --- エラーメッセージ --- */
+.form__error {
+    color: #d45a5a;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* --- ボタン --- */
+.form__button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form__button-submit {
+    background-color: #8B7969;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 60px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__button-submit:hover {
+    opacity: 0.8;
+}
+
+/* --- 登録リンク --- */
+.register__link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register__button-submit {
+    text-decoration: none;
+    color: #8B7969;
+    font-size: 14px;
+}

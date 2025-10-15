@@ -1,0 +1,260 @@
+/* 全体レイアウト */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Inika',serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* タイトル */
+h1 {
+    font-family: 'Inika', serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 12px;
+    margin-bottom: 30px;
+}
+h1.mb-4.text-center {
+    color: #5a4635;
+}
+
+/* 検索フォーム */
+form.bg-light {
+    background-color: #FFFFFF !important;
+    border-radius: 0 !important;
+    padding: 20px 25px !important;
+    font-family: 'Inika', serif;
+}
+
+form.bg-light .form-control,
+form.bg-light .form-select {
+    background: #F4F4F4;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+form.bg-light .btn-primary {
+    background-color: #8b7969;
+    border: none;
+    border-radius: 0;
+    transition: 0.2s;
+}
+
+form.bg-light .btn-primary:hover {
+    background-color: #6e5f50;
+}
+
+form.bg-light .btn-secondary {
+    background-color: #D9C6B5;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 6px 12px;
+    transition: 0.2s;
+}
+
+form.bg-light .btn-secondary:hover {
+    background-color: #7a6550;
+    color: #fff;
+}
+
+form.bg-light .btn-success {
+    background-color: #5a4635;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 14px;
+    transition: 0.2s;
+}
+
+form.bg-light .btn-success:hover {
+    background-color: #7a6550;
+}
+
+/* テーブル全体 */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    overflow: hidden;
+    font-family: 'Inika', serif !important;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.table th,
+.table td {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #8b7969 !important;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.table tr:hover {
+    background-color: #faf6f3;
+}
+
+.table td button {
+    border: 1px solid #8b7969;
+    color: #8b7969;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.table td button:hover {
+    background-color: #8b7969;
+    color: #fff;
+}
+
+/* ページネーション */
+nav[role="navigation"] {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+.export-pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.export-pagination-wrapper .pagination {
+    display: flex;
+    gap: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.export-pagination-wrapper .pagination li a,
+.export-pagination-wrapper .pagination li span {
+    display: block;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    color: #5a4635;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 12px;
+    min-width: 30px;
+}
+
+.export-pagination-wrapper .pagination li.active span {
+    background-color: #8b7969;
+    color: #fff;
+    border-color: #8b7969;
+}
+
+.export-pagination-wrapper .btn-success {
+    color: #8b7969;
+    padding: 8px 20px !important;
+    font-size: 14px;
+    border-radius: 0px !important;
+    background-color: #E1DBD699 !important;
+}
+
+/* --- モーダル全体 --- */
+.modal-content {
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 30px 50px;
+    max-width: 805px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 閉じるボタン */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
+    color: #8B7969;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* 項目名と内容 */
+.modal-body {
+    margin-top: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #5a4635;
+}
+
+.modal-body dl {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    row-gap: 14px;
+    column-gap: 10px;
+}
+
+.modal-body dt {
+    font-weight: bold;
+    color: #5a4635;
+}
+
+.modal-body dd {
+    margin: 0;
+    font-size: 14px;
+    color: #4b3b2d;
+    word-wrap: break-word;
+}
+
+/* 削除ボタン */
+.modal-footer {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px;
+}
+
+.modal-footer button {
+    background-color: #BA370D;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.modal-footer button:hover {
+    background-color: #6e5f50;
+}
+
+/* ディスクリストのスタイル */
+dl.row {
+    margin-bottom: 0;
+}
+
+dl dt {
+    font-weight: 600;
+    color: #5a4635;
+    margin-bottom: 4px;
+}
+
+dl dd {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,84 @@
+body {
+    font-family: 'Inika',serif;
+    color: #5a4635;
+}
+
+.header {
+    background: #fff;
+    border: 1px solid #E0DFDE;
+    position: relative;
+    font-family: 'Inika', serif;
+    color: #8B7969;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.header__logo {
+    color: #8B7969;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.header__auth {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__auth form {
+    margin: 0;
+}
+
+.header__button {
+    background-color: #F0F0F099;;
+    color: #8B7969;
+    border: 1px solid #D9C6B5;
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header__button:hover {
+    background-color: #F9F9F9;
+}
+
+.form__group {
+    margin-bottom: 20px;
+}
+
+.form__label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form__label--required {
+    color: red;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.form__name-fields input {
+    width: 48%;
+    margin-right: 4%;
+}
